@@ -3,10 +3,6 @@ def quicksort(arr):
     #base cases
     if len(arr)==1:
         return arr
-    elif len(arr)==2:
-        if arr[0]>arr[1]:
-            arr[0],arr[1]=arr[1],arr[0]
-        return arr
     else:
         #preprocessing, selecting random pivot; fixes
         pivot_ind=random.randint(0,len(arr)-1)
